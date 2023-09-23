@@ -1,51 +1,67 @@
 *
 {
-font-family: 'Times New Roman', Times, serif;
-margin: 0px;
+font-family:'Nunito Sans', sans-serif;
+margin: 3px;
 padding: 0px;
 box-sizing: border-box;
+}
+body{
+    background-color: antiquewhite;
+    border-style: solid;
+    background-position: 30px;
 }
 h1
 {
     text-align: center;
+    text-decoration: underline;
 }
-header{
-    background-color: aqua;
-    text-align: end;
-    padding: 20px;
+div{
+    text-align: right;
+    padding: 1  px;
 }
-
-ul li
-{
- display: inline;
- padding: 10px;
- border: 1px dotted #000;
- border-top-left-radius: 10px;
- 
+select{
+    background-color: #fe8ced;
 }
-a{
-    text-decoration: none;
-}
-a:hover{
-color: red;
-    text-decoration: underline wavy;
-}
-a:focus
-{
-    color:green;
-}
-.parent
-{
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-    height:100px;
-    width:400px;
-}
-.child
-{
-    background-color: red;
-    height:100px;
-    border: 2px solid black;
-    width: 80px;
-}
+.right {
+    position: absolute;
+  right: 15px;
+  width: 300px;
+    border: 3px solid #73AD21;
+    padding: 10px;
+    border-top-left-radius: 15px;
+  }
+#adr {
+    text-align: center;
+    width: 80%;
+  }
+  input[type=text]{
+    background-color: #39fdb5;
+  color: rgb(196, 36, 36);
+  }
+  input[type=number]{
+    background-color: rgb(78, 201, 245);
+    color:white
+  }
+  input[type=tel]{
+    background-color:bisque
+  }
+  input[type=email]{
+    background-color: burlywood;
+    color: white;
+  }
+  input[type=date]{
+    background-color: darkgray;
+    color:yellow;
+  }
+  a{
+    text-decoration:underline
+  }
+  #submit,#reset{
+    background-color: #a3e6ef;
+    color:red;font-size: 18px;width: 100px;
+    left: 150px;
+    position: relative;
+  }
+  #img{
+    width: 150px;
+  }

@@ -3,31 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="/assests/log.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
     <title>Admission Form</title>
-    <style>
-              div  {
-  background-color: lightgrey;
-  width: 300px;
-  border: 15px solid green;
-  padding: 50px;
-  margin: 10px;
-}
-.center {
-  float: right;
-  width: 450px;
-  border: 3px solid #f5f8f2;
-  padding: 15px;
-}
-      </style>
 </head>
 <!--<span>&#8727;</span>-->
-<body><br>
-    <img src="/assests/log.jpg" alt="Logo">
-    <div class="center"><b >Indian Springs High School<br> In the Ditrict of NTR,Vijayawada Urban,Beside Main Road.<br>
-      P.O:- Gollapudi,Vijayawada Urban,NTR DT,Andhra Pradesh, Pin:521225 <br>Email:- indianspringshs@gmail.com, *Contact : 9849298492
+<body>
+    <div class="right"><b >Indian Springs High School<br> In the Ditrict of NTR,Vijayawada Urban,Beside Main Road.<br>
+      P.O:- Gollapudi,Vijayawada Urban,NTR DT,Andhra Pradesh, Pin:521225 <br>Email:- indianspringshs@gmail.com, Contact : 9849298492
           </b></div>
-    <br><br><br><h1 style="text-align: center; color:blue;" >Admission Form</h1>
+          <img src="/assests/log.jpg" alt="Logo" id="img">
+<br><h1 style="text-align: center; color:blue;" >Admission Form</h1>
     <form action="action.java" method="get">
         <div style="width: 70%; text-align:justify;">
             <legend style="text-align: center;"><h2>Application Form For Admission</h2></legend>
@@ -46,9 +33,10 @@
             <label for="Gender">Gender:&lowast;</label>
             <input type="radio" id="Gender" name="gend" required >Male&nbsp;&nbsp;&nbsp; 
             <input type="radio"id="Gender" name="gend" required >Female&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <label for="Mast">Marital Status:&lowast;</label>
-            <input type="radio" id="mast" name="mas" required >Single&nbsp;
-            <input type="radio" id="mast" name="mas" required >Married<br><br>
+            <label for="Mast">Medium:&lowast;</label>
+            <input type="radio" id="mast" name="mas" required checked >English&nbsp;
+            <input type="radio" id="mast" name="mas" required >Telugu&nbsp;
+            <input type="radio" id="mast" name="mas" required >Hindi&nbsp;<br><br>
             <label for="reg" >Religion:</label>
             <select id="reg" name="reg">
               <option value="select">select</option>
@@ -65,8 +53,8 @@
                 </select></span><br><br>
             <label for="adrno">Aadhaar Number:<span>&lowast;</span></label>
             <input type="number" id="adrno" name="" required><br><br>
-            <label for="adr" >Permanent Address:<span>&lowast;</span></label>
-            <input type="text" id="adr" name="Adre" size="70" required><br><br>
+            <label for="adr">Permanent Address:<span>&lowast;</span></label>
+            <input type="text" id="adr" name="Adre" size="100" required><br><br>
             <label for="phn">Student Phone No:&lowast;</label>
             <input type="tel" id="phn" name="pho" maxlength="10" pattern="[0-9]" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     
             <label for="mai">Student E-mail ID:&lowast;</label>
@@ -79,7 +67,8 @@
             <input type="checkbox" id="cour" name="Cou" required >HTML
             <input type="checkbox" id="cour" name="Cou" required >SQL
             <input type="checkbox" id="cour" name="Cou" required >ASP.NET
-            <input type="checkbox" id="cour" name="Cou" required >C#<br><br>
+            <input type="checkbox" id="cour" name="Cou" required >C#
+            <input type="checkbox" id="cour" name="Cou" required >All the Courses<br><br>
             <label for="Occu">Occupation:</label>
                 <select id="Occu" name="occ">
                   <option value="select">select</option>
@@ -89,7 +78,7 @@
                   <option value="Others">Others</option>
                 </select></span><br><br>
                 <label for="iden">Personal Marks for Identification:&lowast;</label>
-            1.<input type="text" id="iden" name="" size="50" required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.<input type="text" id="iden" name="" size="50" required><br><br>
+            1.<input type="text" id="iden" name="" size="50" required>&nbsp;&nbsp;2.<input type="text" id="iden" name="" size="50" required><br><br>
             <label for="prescl">Previous School Studied:&lowast;</label>
             <input type="text" id="prescl" name="" size="30" required><br><br>
 
@@ -99,8 +88,8 @@
 
 
 
-            <input type="submit">
-            <input type="reset">
+            <input type="submit" id="submit">
+            <input type="reset" id="reset"><br><a href="http://www.google.com">link</a>
         </fieldset>
     </form>
     </body>
