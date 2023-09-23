@@ -53,9 +53,6 @@ select{
     background-color: darkgray;
     color:yellow;
   }
-  a{
-    text-decoration:underline
-  }
   #submit,#reset{
     background-color: #a3e6ef;
     color:red;font-size: 18px;width: 100px;
